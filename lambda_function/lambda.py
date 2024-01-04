@@ -1,35 +1,35 @@
 # Lambda Function
 
-# fungsi biasa
-def kuadrat(angka):
-    return angka**2
+# regular function
+def quadratic_function(number):
+    return number**2
 
-print(f"Hasil fungsi kuadarat = {kuadrat(4)}")
+print(f"Resut of quadratic function = {quadratic_function(4)}")
 
 # lambda function
 # output = lambda argument: expression
-kuadrat = lambda angka:angka**2
-print(f"Hasil fungsi kuadarat = {kuadrat(5)}")
+quadratic_function = lambda number:number**2
+print(f"Hasil fungsi kuadarat = {quadratic_function(5)}")
 
 
-pangkat = lambda num,pow:num**pow
-print(f"Hasil pangkat = {pangkat(5,3)}")
+exponent = lambda num,pow:num**pow
+print(f"Result of exponent = {exponent(5,3)}")
 
-# contoh lambda function
+# example of lambda function
 
-# sorting list biasa
+# sorting regular list (based on alphabetic order)
 data_list = ["wijaya","rey","yuji"]
 data_list.sort()
 print(f"Sorted list = {data_list}")
 
-# sorting pakai panjang
-def panjang_nama(nama):
-    return len(nama)
+# sorting based on length of the name using regular function
+def name_length(name):
+    return len(name)
 
-data_list.sort(key=panjang_nama)
-print(f"Sorted list by panjang = {data_list}")
+data_list.sort(key=name_length)
+print(f"Sorted list by length = {data_list}")
 
-# sorting pakai lambda
+# sorting based on length of the name using lambda function
 data_list = ["wijaya","rey","yuji"]
-data_list.sort(key=lambda nama:len(nama))
-print(f"Sorted list by panjang = {data_list}")
+data_list.sort(key=lambda name:len(name))
+print(f"Sorted list by length = {data_list}")
