@@ -5,7 +5,7 @@
 
 # import several functions 
 from mathematics import add,multiply
-from mathematics import exponent as exp # using alias
+from mathematics import exponent as exp # import using alias
 
 # import all function
 # from mathematics import * 
