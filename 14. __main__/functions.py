@@ -1,0 +1,1 @@
+print(f"__name__ dari file functions.py adalah {__name__}")
